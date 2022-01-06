@@ -1,0 +1,40 @@
+.plan {
+    background-color: #F8F9FE;
+    border-radius: 15px;
+    margin: 15px auto;
+    padding: 5px 0;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+  }
+
+.details {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15%;
+}
+
+.price {
+    font-family: "Red Hat Display";
+    color: #7280A7;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.change {
+    float: right;
+    margin: auto;
+    display: block;
+    font-size: 14px;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #756CF1;
+    cursor: pointer;
+  }

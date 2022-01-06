@@ -1,38 +1,161 @@
-.App {
+html {
+  /*background-image: url("'%PUBLIC_URL%/pattern-background-desktop.svg'");*/
+  background-color: #E0E8FF;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Sets font size to system default */
+body {
+  font-size: 1em;
+}
+
+/* Element holding everything together */
+.box {
+  /*background-image: url("'%PUBLIC_URL%/illustration-hero.svg'");*/
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: white;
+  border-radius: 20px;
+  margin: 2% auto auto auto;
+  width: max(310px, 30%);
+  box-shadow: 0px 27px 29px -6px #b2c7ff;
+}
+
+
+/* Container holding the elements that make up the order summary */
+.container {
+  overflow: hidden;
   text-align: center;
+  margin: 5% 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Holds the plan details incl. price, change hyperlink and music icon */
+/*.plan {
+  background-color: #F8F9FE;
+  border-radius: 15px;
+  margin: 15px auto;
+  padding: 5px 0;
+  width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: right;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.plan img {
+  float: left;
+  margin: auto;
+  display: block;
+}*/
+
+/* Layout for change hyperlink */
+/*.change {
+  float: right;
+  margin: auto;
+  display: block;
+  font-size: 14px;
+  margin-right: 10px;
+}*/
+
+div {
+  overflow: hidden;
+}
+
+footer {
+  margin-bottom: 0;
+}
+
+.text {
+  font-family: "Red Hat Display";
+  color: #7280A7;
+  font-size: 16px;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-weight: 500;
+}
+
+/*.price {
+  font-family: "Red Hat Display";
+  color: #7280A7;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0;
+}*/
+
+h1 {
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  color: #1F2F56;
+}
+
+h2 {
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 16px;
+  color: #1F2F56;
+  margin-bottom: 0;
+}
+
+/*.details {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15%;
+}*/
+
+button {
+  font-family: "Red Hat Display";
+  border: none;
+  padding: 20px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.button1 {
   color: white;
+  background-color: #3829E0;
+  box-shadow: 0px 25px 40px -10px rgba(52, 40, 222, 0.4);
+}
+.button1:hover {
+  background-color: #756CF1;
 }
 
-.App-link {
-  color: #61dafb;
+.button2 {
+  color: #6E7695;
+  background-color: transparent;
+}
+.button2:hover {
+  color: #1F2F56;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  font-family: "Red Hat Display";
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: none;
+  color: #756CF1;
+}
+
+footer {
+  font-family: "Red Hat Display";
+}
+
+.box-confirm {
+  background-color: white;
+  font-size: 2rem;
+  width: 20%;
+  margin: 0 auto;
+  padding: 5%;
+  border-radius: 20px;
 }
