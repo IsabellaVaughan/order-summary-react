@@ -1,5 +1,6 @@
 import '../App.css';
 
+// To be deleted - originally functioned as SelectPlan.js
 function PlanContainer() {
     {/* Currently with placeholder values */ }
     const planSelection = 'Annual Plan';

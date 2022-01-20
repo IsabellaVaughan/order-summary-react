@@ -19,3 +19,7 @@ button {
 .button1:hover {
     background-color: #756CF1;
 }
+
+#btnPay {
+    display: none;
+}

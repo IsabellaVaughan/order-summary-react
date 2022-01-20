@@ -24,7 +24,7 @@ body {
   background-color: white;
   border-radius: 20px;
   margin: 2% auto auto auto;
-  width: max(310px, 30%);
+  width: max(330px, 30%);
   box-shadow: 0px 27px 29px -6px #b2c7ff;
 }
 
@@ -65,6 +65,18 @@ body {
 
 div {
   overflow: hidden;
+}
+
+#summary {
+  display: none;
+}
+
+#title {
+  display: block;
+}
+
+#change {
+  
 }
 
 footer {
