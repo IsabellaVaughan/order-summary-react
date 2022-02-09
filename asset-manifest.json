@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/order-summary-react/static/css/main.d48941b2.chunk.css",
-    "main.js": "/order-summary-react/static/js/main.4f81c8ff.chunk.js",
-    "main.js.map": "/order-summary-react/static/js/main.4f81c8ff.chunk.js.map",
-    "runtime-main.js": "/order-summary-react/static/js/runtime-main.d20ea2bd.js",
-    "runtime-main.js.map": "/order-summary-react/static/js/runtime-main.d20ea2bd.js.map",
-    "static/js/2.c5d05cc5.chunk.js": "/order-summary-react/static/js/2.c5d05cc5.chunk.js",
-    "static/js/2.c5d05cc5.chunk.js.map": "/order-summary-react/static/js/2.c5d05cc5.chunk.js.map",
-    "static/js/3.3af15ae8.chunk.js": "/order-summary-react/static/js/3.3af15ae8.chunk.js",
-    "static/js/3.3af15ae8.chunk.js.map": "/order-summary-react/static/js/3.3af15ae8.chunk.js.map",
+    "main.css": "/order-summary-react/static/css/main.3f723eba.chunk.css",
+    "main.js": "/order-summary-react/static/js/main.f6e8f0b9.chunk.js",
+    "main.js.map": "/order-summary-react/static/js/main.f6e8f0b9.chunk.js.map",
+    "runtime-main.js": "/order-summary-react/static/js/runtime-main.64542c95.js",
+    "runtime-main.js.map": "/order-summary-react/static/js/runtime-main.64542c95.js.map",
+    "static/js/2.d8605e99.chunk.js": "/order-summary-react/static/js/2.d8605e99.chunk.js",
+    "static/js/2.d8605e99.chunk.js.map": "/order-summary-react/static/js/2.d8605e99.chunk.js.map",
+    "static/js/3.12cc9e32.chunk.js": "/order-summary-react/static/js/3.12cc9e32.chunk.js",
+    "static/js/3.12cc9e32.chunk.js.map": "/order-summary-react/static/js/3.12cc9e32.chunk.js.map",
     "index.html": "/order-summary-react/index.html",
-    "static/css/main.d48941b2.chunk.css.map": "/order-summary-react/static/css/main.d48941b2.chunk.css.map",
-    "static/js/2.c5d05cc5.chunk.js.LICENSE.txt": "/order-summary-react/static/js/2.c5d05cc5.chunk.js.LICENSE.txt"
+    "static/css/main.3f723eba.chunk.css.map": "/order-summary-react/static/css/main.3f723eba.chunk.css.map",
+    "static/js/2.d8605e99.chunk.js.LICENSE.txt": "/order-summary-react/static/js/2.d8605e99.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d20ea2bd.js",
-    "static/js/2.c5d05cc5.chunk.js",
-    "static/css/main.d48941b2.chunk.css",
-    "static/js/main.4f81c8ff.chunk.js"
+    "static/js/runtime-main.64542c95.js",
+    "static/js/2.d8605e99.chunk.js",
+    "static/css/main.3f723eba.chunk.css",
+    "static/js/main.f6e8f0b9.chunk.js"
   ]
 }
