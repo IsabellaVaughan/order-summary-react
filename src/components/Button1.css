@@ -1,4 +1,4 @@
-button {
+button.button1 {
     font-family: "Red Hat Display";
     border: none;
     padding: 20px;
@@ -14,7 +14,8 @@ button {
 .button1 {
     color: white;
     background-color: #3829E0;
-    box-shadow: 0px 25px 40px -10px rgba(52, 40, 222, 0.4);
+    box-shadow: 0px 20px 15px -10px rgb(52 40 222 / 30%);
+    margin-bottom: 7px;
 }
 .button1:hover {
     background-color: #756CF1;
