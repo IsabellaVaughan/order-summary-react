@@ -5,7 +5,6 @@ import './index.css';
 import SelectPlanTitle from './components/SelectPlanTitle';
 import SelectPlan from './components/SelectPlan';
 import Button1 from './components/Button1';
-import PlanContainer from './components/PlanContainer';
 import OrderSummary from './components/OrderSummary';
 import PaymentForm from './components/PaymentForm';
 import ConfirmPayment from './components/ConfirmPayment';
@@ -23,10 +22,8 @@ function App(props) {
 
   let selectedPlan2;
   const addSelectPlanHandler = selectedPlan => {
-    console.log("in app.js" + selectedPlan);
     selectedPlan2 = selectedPlan;
 
-    console.log(selectedPlan2 + "callPlan");
     const filteredPlans = plans.filter(plan => {
       if (selectedPlan2 === plan.title) {
         return plan.title === selectedPlan2;
@@ -41,7 +38,6 @@ function App(props) {
     onUpdatePlan(filteredPlans);
   }
   const proceedPlanHandler = proceedPlan => {
-    console.log(proceedPlan);
     var planDisplay = document.getElementById("planHolder");
     var planSummary = document.getElementById("summary");
     var formDisplay = document.getElementById("form__pay");
@@ -54,19 +50,22 @@ function App(props) {
   }
 
   const submitHandler = submitPlan => {
-    console.log(submitPlan);
-    var loadingDisplay = document.getElementById("loading");
-    var cancelBtn = document.getElementById("cancelButton");
-    loadingDisplay.style.display = "block";
-    cancelBtn.style.display = "none";
-    var formDisplay = document.getElementById("form__pay");
-    formDisplay.style.display = "none";
-    var confirmPay = document.getElementById("confirmation");
-    confirmPay.style.visibility = "hidden";
-    confirmPay.style.opacity = "0";
-    window.setTimeout(loadingSpinner, 4500);
+    // true is returned when PaymentForm.js receives valid visa card input
+    if (submitPlan === true) {
+      var loadingDisplay = document.getElementById("loading");
+      var cancelBtn = document.getElementById("cancelButton");
+      loadingDisplay.style.display = "block";
+      cancelBtn.style.display = "none";
+      var formDisplay = document.getElementById("form__pay");
+      formDisplay.style.display = "none";
+      var confirmPay = document.getElementById("confirmation");
+      confirmPay.style.visibility = "hidden";
+      confirmPay.style.opacity = "0";
+      window.setTimeout(loadingSpinner, 4500);
+    }
   }
 
+  // Processing input details for 4.5 seconds
   function loadingSpinner() {
     var loadingDisplay = document.getElementById("loading");
     loadingDisplay.style.visibility = "hidden";

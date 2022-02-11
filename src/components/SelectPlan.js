@@ -17,7 +17,6 @@ function SelectPlan(props) {
             price: props.price,
             frequency: props.frequency,
         };
-        console.log("Test" + selectedPlan.price);
         var summaryDisplay = document.getElementById("summary");
         var orderTitle = document.getElementById("title");
         var btnPay = document.getElementById("btnPay");

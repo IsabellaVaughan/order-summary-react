@@ -2,14 +2,12 @@
     display: none;
 }
 
-#payBtn {}
-
 #form__pay label {
     display: inherit;
     font-size: 1.2rem;
 }
 
-#form__pay input {
+#form__pay input, select {
         display: inline-block;
         width: 80%;
         font-size: 1.2rem;
@@ -27,4 +25,17 @@
 input#securitycode {
     width: 30%;
     text-align: center;
+}
+
+select {
+    width: 20%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#invalid_visa, #empty_visa, #empty_scode, #invalid_scode, #empty_name {
+    display: none;
+    color: #cc0000;
+    margin-top: 0;
 }
