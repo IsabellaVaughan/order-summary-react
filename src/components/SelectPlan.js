@@ -8,10 +8,12 @@ function SelectPlan(props) {
     const [price, setPrice] = useState(props.price);
     const [frequency, setFrequency] = useState(props.frequency);
     const [change, toggleChange] = useState("Select");
+    // var selectPlanToggle = true;
     console.log("SelectPlan evaluated by react");
     // Event handler upon clicking Select for a plan option; grabs the title, price and
     // frequency values of the plan to be used later.
     function clickHandler() {
+        // setTitle("Plan Selected!");
         const selectedPlan = {
             title: props.title,
             price: props.price,
@@ -27,6 +29,7 @@ function SelectPlan(props) {
             summaryDisplay.style.display = "block"
             orderTitle.style.display = "none";
             btnPay.style.display = "inline-block";
+            // selectPlanToggle = !selectPlanToggle;
             toggleChange("Change");
             props.onChoosePlan(selectedPlan.title);
             // if (props.title === selectedPlan.title) {
@@ -41,6 +44,7 @@ function SelectPlan(props) {
             summaryDisplay.style.display = "none"
             orderTitle.style.display = "block";
             btnPay.style.display = "none";
+            // selectPlanToggle = !selectPlanToggle;
             toggleChange("Select");
             props.onChoosePlan("none");
         }
@@ -52,10 +56,14 @@ function SelectPlan(props) {
             </div>
         )*/}
         console.log(selectedPlan.title + " $" + selectedPlan.price + selectedPlan.frequency);
+        // console.log(selectedPlan.title);
+        // console.log(selectedPlan.price);
+        // console.log(selectedPlan.frequency);
+        // console.log(title, price + frequency);
     }
 
     return (
-        <div id="planHolder">
+        <div>
             <div className="plan" id="plan">
                 {/*<img src="%PUBLIC_URL%/icon-music.svg" alt="music>"> </img>*/}
                 <div className="details">
